@@ -18,12 +18,8 @@ def run_quest(quest,check,ansU,ansR):
             
 
 #Identify Variables
-qA = int()
-qA2 = int()
-choice = False
-choice2 = False
-#score = int(0)
-
+q1a = int()
+q1choice = False
 q1t = ("""Which one of these colours are the primary colours?
 1.Yellow
 2.Green
@@ -31,7 +27,8 @@ q1t = ("""Which one of these colours are the primary colours?
 4.Purple
 Answer:  """)
 
-
+q2a = int()
+q2choice = False
 q2t = ("""What colours make pink?
 1.Red + Blue
 2.Purple + Blue
