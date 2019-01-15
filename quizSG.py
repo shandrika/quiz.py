@@ -1,11 +1,28 @@
-#Fix Looping Issue + Add Score
+#Custom Function Added, Score Commented Out
+
+#Custom fucntion
+def run_quest(quest,check,ansU,ansR):
+    print(quest)
+    while check == False:
+        try:
+            ansU = int(input(quest))
+            if ansU == ansR:
+                #score += 1
+                check = True
+            elif 0 < ansU < 5:
+                check = True
+            else:
+                print("Please type a whole number between 1 and 4. ")
+        except ValueError:
+            print("Seriously? Please put a WHOLE POSITIVE INTEGER between 1 and 4")
+            
 
 #Identify Variables
 qA = int()
 qA2 = int()
 choice = False
 choice2 = False
-score = int(0)
+#score = int(0)
 
 q1t = ("""Which one of these colours are the primary colours?
 1.Yellow
@@ -22,40 +39,3 @@ q2t = ("""What colours make pink?
 4.Red + White
 Answer:  """)
 
-#While Loop
-while choice == False:
-    try:
-        qA = int(input(q1t))
-        
-        if qA == 1:
-            score += 1
-            choice = True
-
-        elif 0 < qA < 5:
-            choice = True
-
-        else:
-            print("Please type a whole number between 1 and 4. ")
-
-    except ValueError:
-        print("Seriously? Please put a WHOLE POSITIVE INTEGER between 1 and 4. ")
-
-
-while choice2 == False:
-    try:
-        qA2 = int(input(q2t))
-        
-        if qA2 == 4:
-            score += 1
-            choice2 = True
-
-        elif 0 < qA2 < 5:
-            choice2 = True
-
-        else:
-            print("Please type a whole number between 1 and 4. ")
-
-    except ValueError:
-        print("Seriously? Please put a WHOLE POSITIVE INTEGER between 1 and 4. ")
-
-print("you have", score,"point(s).")   
