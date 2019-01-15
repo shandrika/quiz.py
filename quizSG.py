@@ -2,7 +2,6 @@
 
 #Custom fucntion
 def run_quest(quest,check,ansU,ansR):
-    print(quest)
     while check == False:
         try:
             ansU = int(input(quest))
@@ -26,6 +25,7 @@ q1t = ("""Which one of these colours are the primary colours?
 3.Orange
 4.Purple
 Answer:  """)
+q1c = 1
 
 q2a = int()
 q2choice = False
@@ -35,4 +35,7 @@ q2t = ("""What colours make pink?
 3.Yellow + Red
 4.Red + White
 Answer:  """)
+q2c = 4
 
+#Run Program
+run_quest(q1t, q1choice, q1a, q1c)
