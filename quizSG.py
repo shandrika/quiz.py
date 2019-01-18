@@ -39,3 +39,4 @@ q2c = 4
 
 #Run Program
 run_quest(q1t, q1choice, q1a, q1c)
+run_quest(q2t, q2choice, q2a, q2c)
