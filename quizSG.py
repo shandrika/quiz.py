@@ -138,5 +138,12 @@ run_quest(q9t, q9choice, q9a, q9c)
 run_quest(q10t, q10choice, q10a, q10c)
 
 #User's Score
-print("Congrats! You got",grade * 10,"% right!")
+
+if -1 < grade < 4:
+    print ("Jesus... You got",grade * 10,"% right! Learn your colours!")
+
+elif 3 < grade < 7:
+    print(" Hmm.. Not Bad. Your got",grade * 10,"% right!")
             
+elif 6 < grade < 11:
+    print( "Congrats! You got",grade * 10,"% right! Smarty Pants!")
